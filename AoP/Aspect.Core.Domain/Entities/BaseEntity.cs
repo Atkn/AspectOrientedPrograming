@@ -12,6 +12,8 @@ namespace Aspect.Core.Domain.Entities
         public virtual string Title { get; set; }
         public virtual DateTime? CreatedAt { get; set; }
         public virtual DateTime? ModifiedAt { get; set; }
+
+        public virtual int State { get; set; }
         public BaseEntity()
         {
             Id = Guid.NewGuid();
